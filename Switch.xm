@@ -1,12 +1,11 @@
-#import "FSSwitchDataSource.h"
-#import "FSSwitchPanel.h"
+#import <Flipswitch/FSSwitchDataSource.h>
+#import <Flipswitch/FSSwitchPanel.h>
 #import "../PS.h"
 #import <substrate.h>
 
 CFStringRef kJSKey = CFSTR("JavaScriptEnabled");
 CFStringRef kJS2Key = CFSTR("WebKitJavaScriptEnabled");
 NSString *kSafari = @"com.apple.mobilesafari";
-//CFStringRef const kPostNotification = CFSTR("");
 
 @interface LSBundleProxy : NSObject
 @property(readonly) NSURL *dataContainerURL;
@@ -91,9 +90,7 @@ extern "C" int sandbox_container_path_for_pid(pid_t pid, char *buffer, size_t bu
 	if (self.safariDomain) {
 		CFPreferencesSetAppValue(kJSKey, enabled, (CFStringRef)self.safariDomain);
 		CFPreferencesSetAppValue(kJS2Key, enabled, (CFStringRef)self.safariDomain);
-		//CFPreferencesAppSynchronize((CFStringRef)self.safariDomain);
 	}
-	//CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), kPostNotification, nil, nil, YES);
 }
 
 @end
