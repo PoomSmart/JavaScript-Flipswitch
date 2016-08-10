@@ -1,7 +1,6 @@
 #import <Flipswitch/FSSwitchDataSource.h>
 #import <Flipswitch/FSSwitchPanel.h>
 #import "../PS.h"
-#import <substrate.h>
 
 CFStringRef kJSKey = CFSTR("JavaScriptEnabled");
 CFStringRef kJS2Key = CFSTR("WebKitJavaScriptEnabled");
