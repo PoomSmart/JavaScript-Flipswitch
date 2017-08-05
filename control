@@ -1,6 +1,6 @@
 Package: org.thebigboss.jsfs
 Name: JavaScript Flipswitch
-Depends: mobilesubstrate, com.a3tweaks.flipswitch
+Depends: mobilesubstrate, com.a3tweaks.flipswitch, firmware (>= 5.0)
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: Safari JavaScript Flipswitch.
